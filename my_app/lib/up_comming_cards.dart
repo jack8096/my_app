@@ -28,11 +28,17 @@ return Container(
           const Text("Dr. Winnie Ballar", style: TextStyle(color: Colors.white, fontSize: 18, fontWeight: FontWeight.bold),),
           const Text("Dental Specialist", style: TextStyle(color: Colors.white54),),
           Container(
+            
             decoration: BoxDecoration(color: Colors.white10, borderRadius: BorderRadius.circular(10) ),
             child: const Row(
+              
               children: [
-                Icon(Ionicons.calendar_outline, size: 18, color: Colors.white,),
-                Padding(padding: EdgeInsets.only(left: 6.0, right: 14.0), child: Text("Today"),)
+                Padding(padding: EdgeInsets.only(top: 0.0, bottom: 5.0 , left: 6.0, right: 6.0) , child: Icon(Ionicons.calendar_outline, size: 18, color: Colors.white, ),),
+                Text("Today",  style: TextStyle(color: Colors.white,)),
+                
+                 Padding(padding: EdgeInsets.only(top: 0.0, bottom: 5.0 , left: 10.0, right: 6.0) , child: Icon(Ionicons.timer_outline , size: 18 , color: Colors.white,),),
+                
+                Padding(padding: EdgeInsets.only(left: 0.0, right: 14.0), child: Text("1:00 - 2:30" , style: TextStyle(color: Colors.white,),),),
               ],
             ),
           )
