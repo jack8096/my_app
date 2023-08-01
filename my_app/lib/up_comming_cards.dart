@@ -8,7 +8,7 @@ class UpComingCards extends StatelessWidget{
   Widget build(BuildContext context){
 return Container(
   width: double.maxFinite,
-  height: 200,
+  height: 150,
   padding:const EdgeInsets.symmetric(vertical:20.0, horizontal: 20.0),
   decoration: BoxDecoration(
     color: Theme.of(context).primaryColor,
@@ -19,7 +19,7 @@ return Container(
     children: [
       ClipRRect(
       borderRadius: BorderRadius.circular(10),
-      child: Image.asset("../asset/doctor_2.jpg", width: 45,),
+      child: Image.asset("../asset/doctor_2.jpg", width: 60,),
       ),
       const SizedBox(width: 18,),
       Column(
@@ -27,6 +27,7 @@ return Container(
         children: [
           const Text("Dr. Winnie Ballar", style: TextStyle(color: Colors.white, fontSize: 18, fontWeight: FontWeight.bold),),
           const Text("Dental Specialist", style: TextStyle(color: Colors.white54),),
+          const SizedBox(height: 20),
           Container(
             
             decoration: BoxDecoration(color: Colors.white10, borderRadius: BorderRadius.circular(10) ),

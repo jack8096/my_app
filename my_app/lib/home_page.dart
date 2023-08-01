@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
 import 'package:my_app/health_needs.dart';
+import 'package:my_app/nearby_doctor.dart';
 import "package:my_app/up_comming_cards.dart";
 
 class HomePage extends StatelessWidget {
@@ -16,7 +17,10 @@ class HomePage extends StatelessWidget {
           
           const SizedBox(height: 40), Text("Health Needs" , style: Theme.of(context).textTheme.titleLarge, ),
           
-          const HealthNeeds()
+          const HealthNeeds(),
+
+          const SizedBox(height: 40), Text("Nearby Doctor" , style: Theme.of(context).textTheme.titleLarge, ),
+          const NearbyDoctor()
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(

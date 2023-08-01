@@ -6,11 +6,11 @@ class HealthNeeds extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-List<customicon> healthNeeds =[
-  customicon(icon: "../asset/appointment.png", title: "Appointment"),
-  customicon(icon: "../asset/hospital.png", title: "Hospital"),
-  customicon(icon: "../asset/virus.png", title: "Covid-19"),
-  customicon(icon: "../asset/more.png", title: "More"),
+List<Customicon> healthNeeds =[
+  Customicon(icon: "../asset/appointment.png", title: "Appointment"),
+  Customicon(icon: "../asset/hospital.png", title: "Hospital"),
+  Customicon(icon: "../asset/virus.png", title: "Covid-19"),
+  Customicon(icon: "../asset/more.png", title: "More"),
 ];
 
     
@@ -26,10 +26,10 @@ List<customicon> healthNeeds =[
             
             decoration:BoxDecoration(
               color: Theme.of(context).primaryColor.withOpacity(0.4),
-              borderRadius: BorderRadius.all(Radius.circular(30))),
+              borderRadius:const BorderRadius.all(Radius.circular(30))),
             height: 60,
             
-            padding: EdgeInsets.all(13),
+            padding:const EdgeInsets.all(13),
             child: Image.asset(healthNeeds[index].icon),),
             Text(healthNeeds[index].title)
         ],
@@ -44,8 +44,8 @@ List<customicon> healthNeeds =[
 }
 
 
-class customicon{final String icon; final String title;
-customicon({
+class Customicon{final String icon; final String title;
+Customicon({
 required this.icon,
 required this.title
 
